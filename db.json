@@ -1,0 +1,520 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "userId": 2
+    },
+    {
+      "username": "admin",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "articles": [
+    {
+      "id": "1",
+      "title": "JS news",
+      "subtitle": "Что нового в JS?",
+      "img": "https://masterpiecer-images.s3.yandex.net/7758e3aa825511f0bf9a322dcb89aa32:1",
+      "views": 134,
+      "createdAt": "20.05.2025",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Обновления языка",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);"
+        },
+        {
+          "id": "7",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "8",
+          "type": "IMAGE",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        },
+        {
+          "id": "9",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "World news",
+      "subtitle": "Главное за неделю",
+      "img": "https://avatars.mds.yandex.net/i?id=6ec0c32d576c0b3dd979ebef35f34888231ca0e8-16312088-images-thumbs&n=13",
+      "views": 10025,
+      "createdAt": "20.11.2025",
+      "userId": "1",
+      "type": [
+        "LIFE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Мировая повестка",
+          "paragraphs": [
+            "Кратко о главных событиях недели: экономика, политика, технологии.",
+            "Собрали цифры, ссылки и цитаты, чтобы сэкономить ваше время."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Finance news",
+      "subtitle": "Рынки и инвестиции",
+      "img": "https://avatars.mds.yandex.net/i?id=b28252538baf9929554a8bd39f42bb2cf04b8068-4946540-images-thumbs&n=13",
+      "views": 8421,
+      "createdAt": "11.11.2025",
+      "userId": "1",
+      "type": [
+        "FINANCE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Коротко по рынкам",
+          "paragraphs": [
+            "Фондовые индексы закрылись в зеленой зоне на фоне позитивной статистики.",
+            "Облигации остаются привлекательными для консервативных инвесторов."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "DevOps digest",
+      "subtitle": "Практики доставки",
+      "img": "https://i.imgur.com/5Y9N4Jf.png",
+      "views": 2450,
+      "createdAt": "12.03.2025",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "CI/CD без боли",
+          "paragraphs": [
+            "Рассмотрим, как разбить пайплайн на этапы и избежать длинных очередей.",
+            "Покажем, как кэширование зависимостей экономит десятки минут на сборке."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Data Science trends",
+      "subtitle": "Годовые итоги",
+      "img": "https://i.imgur.com/vqS2TwX.jpg",
+      "views": 5170,
+      "createdAt": "05.01.2025",
+      "userId": "2",
+      "type": [
+        "DATA_SCIENCE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Модели и стек",
+          "paragraphs": [
+            "Подводим итоги по развитию LLM и росту мульти-модальных моделей.",
+            "Обсуждаем инструменты MLOps, которые стали дефолтом в 2025 году."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Design systems",
+      "subtitle": "Компоненты без хаоса",
+      "img": "https://i.imgur.com/0cPZ1pC.png",
+      "views": 1890,
+      "createdAt": "18.02.2025",
+      "userId": "1",
+      "type": [
+        "DESIGN"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Единый язык интерфейсов",
+          "paragraphs": [
+            "Рассказываем, как обновить дизайн-систему без остановки разработки.",
+            "Делимся примерами токенов и типографики для разных платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Mobile weekly",
+      "subtitle": "iOS и Android",
+      "img": "https://i.imgur.com/gL8Y0UG.jpg",
+      "views": 3210,
+      "createdAt": "07.06.2025",
+      "userId": "2",
+      "type": [
+        "MOBILE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Натив vs. мультиплатформа",
+          "paragraphs": [
+            "Сравниваем SwiftUI, Jetpack Compose и современные кроссплатформенные фреймворки.",
+            "Подсветим компромиссы по времени разработки и производительности."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "AI breakthroughs",
+      "subtitle": "Главное в ИИ",
+      "img": "https://i.imgur.com/Peu0S8s.jpg",
+      "views": 9720,
+      "createdAt": "22.04.2025",
+      "userId": "1",
+      "type": [
+        "AI"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Что изменилось",
+          "paragraphs": [
+            "Отмечаем прогресс в reasoning-способностях и новых открытых моделях.",
+            "Говорим о безопасности: ограничения, фильтры и новые протоколы тестирования."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Frontend tooling",
+      "subtitle": "Бандлеры и линтеры",
+      "img": "https://i.imgur.com/ARmQn8L.png",
+      "views": 4120,
+      "createdAt": "30.05.2025",
+      "userId": "2",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Стабильные сборки",
+          "paragraphs": [
+            "Сравниваем Vite, Turbopack и Rspack на реальных проектах.",
+            "Показываем, как грамотно настраивать линтеры, чтобы не мешали разработке."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Backend patterns",
+      "subtitle": "Надежные сервисы",
+      "img": "https://i.imgur.com/2NK38Zx.jpg",
+      "views": 3580,
+      "createdAt": "14.03.2025",
+      "userId": "1",
+      "type": [
+        "BACKEND"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Архитектура",
+          "paragraphs": [
+            "Разбираем паттерны CQRS, Saga и circuit breaker в микросервисах.",
+            "Когда стоит переходить на event-driven и как не утонуть в очередях."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Security watch",
+      "subtitle": "Уязвимости недели",
+      "img": "https://i.imgur.com/q0pDJe5.jpg",
+      "views": 2870,
+      "createdAt": "02.06.2025",
+      "userId": "2",
+      "type": [
+        "SECURITY"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Практические советы",
+          "paragraphs": [
+            "Говорим о свежих CVE и способах быстро закрыть окна в продуктиве.",
+            "Напоминаем про минимальные права сервисов и регулярные проверки токенов."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Gaming industry",
+      "subtitle": "Релизы и движки",
+      "img": "https://i.imgur.com/VRO9lQ1.jpg",
+      "views": 6010,
+      "createdAt": "09.05.2025",
+      "userId": "1",
+      "type": [
+        "GAMING"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Рынок и технологии",
+          "paragraphs": [
+            "Смотрим на успехи Unreal Engine 5 и рост инди-проектов.",
+            "Отдельно отмечаем тренд на стриминг игр и его влияние на железо."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Health tech",
+      "subtitle": "Медицинские гаджеты",
+      "img": "https://i.imgur.com/WYsDr2v.jpg",
+      "views": 1995,
+      "createdAt": "28.04.2025",
+      "userId": "2",
+      "type": [
+        "HEALTH"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Данные пациента",
+          "paragraphs": [
+            "Обсуждаем умные часы, трекеры сна и их точность в клинических исследованиях.",
+            "Регуляторы усиливают требования к хранению медицинских данных."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "EdTech review",
+      "subtitle": "Обучение онлайн",
+      "img": "https://i.imgur.com/02ZbI4g.jpg",
+      "views": 2760,
+      "createdAt": "16.04.2025",
+      "userId": "1",
+      "type": [
+        "EDTECH"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Новые форматы",
+          "paragraphs": [
+            "Рассматриваем микрокурсы, симуляции и менторские программы.",
+            "Говорим о метриках вовлеченности и удержания студентов."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Green energy",
+      "subtitle": "Чистая генерация",
+      "img": "https://i.imgur.com/eJm6aOf.jpg",
+      "views": 3340,
+      "createdAt": "03.05.2025",
+      "userId": "2",
+      "type": [
+        "ENERGY"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Тренды и инвестиции",
+          "paragraphs": [
+            "Стоимость солнечных панелей снизилась на 12% за год, спрос растет.",
+            "Ветропарки выходят в офшор, а накопители становятся доступнее."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Space tech",
+      "subtitle": "Запуски и спутники",
+      "img": "https://i.imgur.com/1B6T4Sn.jpg",
+      "views": 4510,
+      "createdAt": "21.05.2025",
+      "userId": "1",
+      "type": [
+        "SPACE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Новые миссии",
+          "paragraphs": [
+            "Коммерческие запуски удешевили вывод малых аппаратов на орбиту.",
+            "Mega-constellation операторы усиливают требования к деорбитации."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "AR/VR update",
+      "subtitle": "Иммерсивные технологии",
+      "img": "https://i.imgur.com/OPf0xbr.jpg",
+      "views": 3680,
+      "createdAt": "27.05.2025",
+      "userId": "2",
+      "type": [
+        "ARVR"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Жизнь после релизов",
+          "paragraphs": [
+            "Сравниваем новые гарнитуры по качеству изображения и комфорту.",
+            "Бизнес-кейсы: обучение, дизайн, удаленные совещания с пространственным звуком."
+          ]
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "some comment",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "text": "some comment 2",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "3",
+      "text": "some comment 3",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Привет!",
+      "id": "w2LNLeJ"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "ЗДарова!",
+      "id": "n6UIsCk"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "avatar": "https://i.pinimg.com/736x/03/89/fd/0389fd00d8a6824cacce97d62859ecc6.jpg",
+      "role": "ADMIN"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "123",
+      "avatar": "https://cdn.fishki.net/upload/post/2023/12/11/4539824/9ce28881abeed98dcf500575f3b10910.png",
+      "role": "USER"
+    }
+  ],
+  "profile": [
+    {
+      "id": "1",
+      "first": "Андрей",
+      "lastname": "Стрельников",
+      "age": 33,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moskow",
+      "username": "admin",
+      "avatar": "https://i.pinimg.com/736x/03/89/fd/0389fd00d8a6824cacce97d62859ecc6.jpg",
+      "firstname": "Андрей"
+    },
+    {
+      "id": "2",
+      "first": "Иван",
+      "lastname": "Петров",
+      "age": 29,
+      "currency": "USD",
+      "country": "Ukraine",
+      "city": "Odessa",
+      "username": "user",
+      "avatar": "https://cdn.fishki.net/upload/post/2023/12/11/4539824/9ce28881abeed98dcf500575f3b10910.png",
+      "firstname": "Иваня"
+    }
+  ]
+}
