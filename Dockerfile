@@ -1,17 +1,12 @@
-# App folder
-WORKDIR /usr/src/app
+FROM node:20-alpine
 
-# Packages install
+WORKDIR /app
+
 COPY package*.json ./
-RUN npm install
-# For production use
-# RUN npm install --production
+RUN npm ci --omit=dev
 
-# Copy project files
 COPY . .
 
-# Notify about listening port
 EXPOSE 8000
 
-# Project start
-CMD ["node", "index.js"]
+CMD ["npm", "start"]

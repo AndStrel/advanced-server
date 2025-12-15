@@ -9,7 +9,6 @@ const router = jsonServer.router(path.resolve(__dirname, 'db.json'));
 server.use(jsonServer.defaults({}));
 server.use(jsonServer.bodyParser);
 
-
 // Эндпоинт для логина
 server.post('/login', (req, res) => {
     try {
@@ -44,7 +43,8 @@ server.use((req, res, next) => {
 
 server.use(router);
 
-// запуск сервера
-server.listen(8000, () => {
-    console.log('server is running on 8000 port');
+// запуск сервера (важно для деплоя: слушаем порт из окружения)
+const PORT = process.env.PORT || 8000;
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`server is running on ${PORT} port`);
 });
